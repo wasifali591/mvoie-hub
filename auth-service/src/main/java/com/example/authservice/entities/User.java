@@ -17,7 +17,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.util.Date;
 
 /**
- * This class is an entity class with 7 member variables.
+ * This class is an entity class with 8 member variables.
  * It defines the details of different users.
  *
  * @author wasif
@@ -49,6 +49,11 @@ public class User {
     @Column(length = 70)
     @ApiModelProperty(name = "email", notes = "User email", required = true, value = "abc@mail.com")
     private String email;
+    /**
+     * It represents users username.
+     */
+    @ApiModelProperty(name = "userName", notes = "User username", required = true, value = "abc")
+    private String userName;
     /**
      * It represents users password.
      */
