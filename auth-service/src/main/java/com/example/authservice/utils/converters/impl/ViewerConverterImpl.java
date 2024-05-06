@@ -81,6 +81,7 @@ public class ViewerConverterImpl implements ViewerConverter {
      */
     @Override
     public Viewer toUpdateViewer(ViewerDto viewerDto, Viewer viewer) {
-        return null;
+        modelMapper.map(viewerDto, viewer);
+        return viewer;
     }
 }

@@ -33,5 +33,5 @@ public interface ViewerRepository extends JpaRepository<Viewer, Long> {
      * @return list of viewer
      */
     @Query("SELECT V FROM Viewer V WHERE V.isActive=true")
-    List<Viewer> findAllAllActive();
+    List<Viewer> findAllActive();
 }

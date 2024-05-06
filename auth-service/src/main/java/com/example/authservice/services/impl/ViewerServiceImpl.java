@@ -83,7 +83,7 @@ public class ViewerServiceImpl implements ViewerService {
         List<Viewer> viewerList;
 
         if (isActive) {
-            viewerList = viewerRepository.findAllAllActive();
+            viewerList = viewerRepository.findAllActive();
         } else {
             viewerList = viewerRepository.findAll();
         }
