@@ -1,6 +1,6 @@
 package com.example.authservice.dtos.requests;
 
-import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,8 +17,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ApiModel(description = "It contains business registration details")
-public class UserRegistrationDto {
+//@ApiModel(description = "It contains business registration details")
+public class ViewerRegistrationDto {
     /**
      * It represents users username.
      */

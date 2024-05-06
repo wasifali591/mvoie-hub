@@ -4,7 +4,7 @@ package com.example.authservice.dtos.commons;
  * Copyright (c) 2024 Wasif.
  */
 
-import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,8 +22,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ApiModel(description = "It contains users details")
-public class UserDto {
+//@ApiModel(description = "It contains users details")
+public class ViewerDto {
     /**
      * It represents the unique id of every record.
      */
