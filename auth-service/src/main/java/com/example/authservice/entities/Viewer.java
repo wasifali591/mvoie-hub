@@ -53,7 +53,7 @@ public class Viewer {
      * It represents users username.
      */
 //    @ApiModelProperty(name = "userName", notes = "User username", required = true, value = "abc")
-    private String userName;
+    private String username;
     /**
      * It represents users password.
      */

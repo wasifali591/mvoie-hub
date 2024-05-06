@@ -1,6 +1,7 @@
 package com.example.authservice.dtos.requests;
 
 //import io.swagger.annotations.ApiModel;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +23,7 @@ public class ViewerRegistrationDto {
     /**
      * It represents users username.
      */
-    private String userName;
+    private String username;
     /**
      * It represents users password.
      */
