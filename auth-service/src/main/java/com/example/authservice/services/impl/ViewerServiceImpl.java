@@ -78,16 +78,22 @@ public class ViewerServiceImpl implements ViewerService {
      * @return all ViewerDto entity.
      */
     @Override
-    public List<ViewerDto> getAll() {
+    public List<ViewerDto> getAll(Boolean isActive) {
         logger.debug("Into getAll service method");
-        List<Viewer> ViewerList = viewerRepository.findAll();
+        List<Viewer> viewerList;
 
-        if (ViewerList.isEmpty()) {
+        if (isActive) {
+            viewerList = viewerRepository.findAllAllActive();
+        } else {
+            viewerList = viewerRepository.findAll();
+        }
+
+        if (viewerList.isEmpty()) {
             logger.error("No data available!");
             throw new ResourceNotFoundException("No data available!");
         }
-        logger.debug("Fetched Viewer list => {}", ViewerList);
-        return ViewerList.stream().map(viewerConverter::viewerToViewerDto).collect(Collectors.toList());
+        logger.debug("Fetched Viewer list => {}", viewerList);
+        return viewerList.stream().map(viewerConverter::viewerToViewerDto).collect(Collectors.toList());
     }
 
     /**

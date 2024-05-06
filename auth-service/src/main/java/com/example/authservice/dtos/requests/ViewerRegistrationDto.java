@@ -1,5 +1,9 @@
 package com.example.authservice.dtos.requests;
 
+/*
+ * Copyright (c) 2024 Wasif.
+ */
+
 //import io.swagger.annotations.ApiModel;
 
 import lombok.AllArgsConstructor;
@@ -8,7 +12,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * This class is a dto class of user registration
+ * This class is a dto class of viewer registration
  *
  * @author wasif
  * @version 1.0

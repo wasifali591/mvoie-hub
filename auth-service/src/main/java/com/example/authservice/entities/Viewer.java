@@ -6,6 +6,7 @@ package com.example.authservice.entities;
 
 //import io.swagger.annotations.ApiModel;
 //import io.swagger.annotations.ApiModelProperty;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +19,7 @@ import java.util.Date;
 
 /**
  * This class is an entity class with 8 member variables.
- * It defines the details of different users.
+ * It defines the details of different viewer.
  *
  * @author wasif
  * @version 1.0
@@ -50,17 +51,17 @@ public class Viewer {
 //    @ApiModelProperty(name = "email", notes = "User email", required = true, value = "abc@mail.com")
     private String email;
     /**
-     * It represents users username.
+     * It represents viewer username.
      */
 //    @ApiModelProperty(name = "userName", notes = "User username", required = true, value = "abc")
     private String username;
     /**
-     * It represents users password.
+     * It represents viewer password.
      */
 //    @ApiModelProperty(name = "password", notes = "User password", required = true, value = "abc")
     private String password;
     /**
-     * It represents users is available or not.
+     * It represents viewer is available or not.
      */
     @Builder.Default
 //    @ApiModelProperty(name = "isActive", notes = "User is available or not ", required = true, value = "true/false")

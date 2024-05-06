@@ -22,7 +22,7 @@ public interface ViewerService {
     /**
      * This method add nre {@link Viewer}.
      *
-     * @param viewerRegistrationDto - ViewerDto to be registered
+     * @param viewerRegistrationDto - Viewer to be registered
      * @return {@link ViewerRegistrationDto}
      */
     ViewerRegistrationDto add(ViewerRegistrationDto viewerRegistrationDto);
@@ -32,7 +32,7 @@ public interface ViewerService {
      *
      * @return list of {@link ViewerDto}
      */
-    List<ViewerDto> getAll();
+    List<ViewerDto> getAll(Boolean isActive);
 
     /**
      * This method return a specific {@link ViewerDto} entity identified by the {@link Viewer} id.
